@@ -4,6 +4,43 @@
 
 
 
+.announcement{
+    padding: 10px 0;
+    background: #A6672B;
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        margin-left: 10px;
+        text-align: center;
+    }
+    &__item-link{
+        font-size: 14px;
+        line-height: 21px;
+        color: $accent;
+    }
+}
+
+.offer{
+    padding: 12px 0 10px;
+    background: #252525;
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        margin-left: 10px;
+        text-align: center;
+    }
+    &__item-link{
+        font-size: 14px;
+        line-height: 21px;
+        color: $accent;
+    }
+}
+
+
 
 
 @import "media";
