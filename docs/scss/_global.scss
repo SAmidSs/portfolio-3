@@ -71,11 +71,26 @@ body{
 }
 
 .container{
-  max-width: 1350px;
+  max-width: 1390px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .main{
   flex-grow: 1;
+}
+
+.menu{
+  margin-left: 40px;
+  &__list{
+    display: flex;
+  }
+  &__item + .menu__item{
+    margin-left: 25px;
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 23px;
+    color: $accent;
+  }
 }

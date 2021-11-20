@@ -42,5 +42,145 @@
 
 
 
+.header{
+    background-color: #252525;
+    background-image: url(../images/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    &__inner{
+        display: flex;
+        align-items: center;
+        padding: 34px 0 134px;
+    }
+    &__box{
+        margin-left: auto;
+    }
+    &__btn{
+        margin-left: 30px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $accent;
+    }
+    &__info{
+        padding-bottom: 126px;
+        padding-left: 200px;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 40px;
+        color: $accent;
+        max-width: 400px;
+        margin-bottom: 16px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 27px;
+        color: $accent;
+        max-width: 402px;
+    }
+}
+
+
+.footer{
+    padding: 50px 0 0 0;
+    background-color: #252525;
+    border-bottom: 3px solid #D6D5CB;
+}
+
+
+.footer-top{
+    &__box{
+        margin-bottom: 40px;
+        display: flex;
+    }
+    &__mail{
+        padding-right: 40px;
+        width: 520px;
+    }
+    &__mail-btn{
+        display: block;
+        color: $accent;
+        font-size: 20px;
+        margin-bottom: 12px;
+        position: relative;
+        padding: 10px 0 10px 10px;
+        border: 1px solid $accent;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 19px;
+            right: 15px;
+            width: 12px;
+            height: 10px;
+            background-image: url(../images/icon/arrow-right.svg);
+        }
+    }
+    &__mail-subtitle{
+        font-size: 14px;
+        line-height: 25px;
+        color: $accent;
+    }
+    &__items{
+        display: flex;
+    }
+    &__item{
+        width: 240px;
+        margin-right: 40px;
+    }
+    &__item-title{
+        font-size: 15px;
+        line-height: 30px;
+        color: $accent;
+        padding-bottom: 17px;
+        margin-bottom: 14px;
+        border-bottom: 1px solid $accent;
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 35px;
+        color: $accent;
+    }
+    &__link--icon{
+        padding-right: 15px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background-image: url(../images/icon/icon-link.svg);
+            top: 5px;
+            right: 0;
+        }
+    }
+    &__info{
+        width: 520px;
+        padding-right: 40px;
+    }
+    &__info-title{
+        font-size: 15px;
+        line-height: 30px;
+        padding-bottom: 17px;
+        margin-bottom: 20px;
+        color: $accent;
+        border-bottom: 1px solid $accent;
+    }
+    &__info-text{
+        font-size: 14px;
+        line-height: 25px;
+        color: $accent;
+    }
+}
+
+.footer-bottom{
+    background-color: #252525;
+    padding: 27px 0 22px;
+    &__logo{
+        font-size: 16px;
+        line-height: 19px;
+        color: $accent;
+    }
+}
 
 @import "media";
