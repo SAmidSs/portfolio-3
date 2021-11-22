@@ -43,15 +43,21 @@
 
 
 .header{
-    background-color: #252525;
     background-image: url(../images/header/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
+    transition: all 1s;
     &__inner{
-        display: flex;
         align-items: center;
         padding: 34px 0 134px;
+        transition: top 0.4s;
+        z-index: 99;
+    }
+    &__inner-wrapper{
+        display: flex;
+        max-width: 1390px;
+        margin: 0 auto;
     }
     &__box{
         margin-left: auto;
@@ -209,9 +215,6 @@
 }
 
 
-.slick-arrow{
-    display: none;
-}
 
 
 .slick-dots{
