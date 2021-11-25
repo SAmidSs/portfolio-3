@@ -4,6 +4,22 @@ $(function () {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1030,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 677,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 
@@ -42,6 +58,12 @@ $(function () {
           tempScrollTop = currentScrollTop; 
     });
   });
+
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+    $('.menu__btn').toggleClass('menu__btn--active');
+  })
 
 
 })

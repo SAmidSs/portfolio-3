@@ -7,6 +7,7 @@
 .announcement{
     padding: 10px 0;
     background: #A6672B;
+    z-index: 98;
     &__inner{
         display: flex;
         justify-content: center;
@@ -25,6 +26,7 @@
 .offer{
     padding: 12px 0 10px;
     background: #252525;
+    z-index: 98;
     &__inner{
         display: flex;
         justify-content: center;
@@ -50,17 +52,24 @@
     transition: all 1s;
     &__inner{
         align-items: center;
-        padding: 34px 0 134px;
+        padding: 34px 0;
+        margin-bottom: 134px;
         transition: top 0.4s;
         z-index: 99;
     }
     &__inner-wrapper{
         display: flex;
+        align-items: center;
         max-width: 1390px;
         margin: 0 auto;
+        z-index: 99;
+    }
+    &__logo{
+        z-index: 99;
     }
     &__box{
         margin-left: auto;
+        z-index: 99;
     }
     &__btn{
         margin-left: 30px;
@@ -328,6 +337,7 @@
     &__author{
         font-size: 14px;
         line-height: 28px;
+        display: block;
     }
 }
 
