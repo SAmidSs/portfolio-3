@@ -457,6 +457,7 @@
         margin-bottom: 20px;
         color: $accent;
         border-bottom: 1px solid $accent;
+        @extend %roboto-400;
     }
     &__info-text{
         font-size: 14px;
