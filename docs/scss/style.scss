@@ -1,6 +1,8 @@
 @import "vars";
 @import "libs";
+@import "fonts";
 @import "global";
+
 
 
 
@@ -39,6 +41,7 @@
         font-size: 14px;
         line-height: 21px;
         color: $accent;
+        @extend %roboto-400;
     }
 }
 
@@ -87,12 +90,14 @@
         color: $accent;
         max-width: 400px;
         margin-bottom: 16px;
+        @extend %roboto-400;
     }
     &__text{
         font-size: 16px;
         line-height: 27px;
         color: $accent;
         max-width: 402px;
+        
     }
 }
 
@@ -158,6 +163,7 @@
         margin-bottom: 20px;
         font-size: 28px;
         line-height: 40px;
+        @extend %roboto-400;
     }
     &__info-subtitle{
         margin-bottom: 21px;
@@ -292,6 +298,7 @@
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 27px;
+        
     }
     &__text{
         font-size: 16px;
@@ -419,6 +426,7 @@
         padding-bottom: 17px;
         margin-bottom: 14px;
         border-bottom: 1px solid $accent;
+        @extend %roboto-400;
     }
     &__link{
         font-size: 14px;
